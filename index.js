@@ -1,14 +1,10 @@
 var animal = 'dog'
 
 function myAnimal() {
-
   return animal
 }
 
 function yourAnimal() {
-  // How can we make sure that this function
-  // and the above function both pass?
-  // P.S.: You can't just hard-code 'cat' below
   return animal
 }
 
@@ -30,14 +26,7 @@ var funkyFunction = function() {
 var theFunk = funkyFunction
 
 /*
-describe('Fix the Scope', function() {
-  describe('myAnimal()', function() {
-    it('returns my animal', () => {
-      expect(window.myAnimal()).toEqual('dog')
-    })
-  })
-
-  describe('yourAnimal()', function() {
+describe('yourAnimal()', function() {
     it('returns your animal', function(){
       expect(window.yourAnimal()).toEqual('cat')
     })
